@@ -23,6 +23,11 @@ import keras.layers as KL
 import keras.engine as KE
 import keras.models as KM
 
+#When running on GTX970
+#config = tf.ConfigProto()
+#config.gpu_options.per_process_gpu_memory_fraction = 0.75
+#session = tf.Session(config=config)
+
 from mrcnn import utils
 
 # Requires TensorFlow 1.3+ and Keras 2.0.8+.
