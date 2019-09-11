@@ -19,9 +19,9 @@ import keras.layers as KL
 import keras.models as KM
 
 #When running on GTX970
-#config = tf.ConfigProto()
-#config.gpu_options.per_process_gpu_memory_fraction = 0.75
-#session = tf.Session(config=config)
+config = tf.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.65
+session = tf.Session(config=config)
 
 
 class ParallelModel(KM.Model):
